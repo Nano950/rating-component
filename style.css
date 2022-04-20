@@ -1,31 +1,62 @@
+/* page styles */
+body { 
+    background-color: black;
+}
 
-
+/* card styles */
 .card {
-    border: 1px solid black;
+    background-image:linear-gradient(hsl(213, 19%, 18%),hsl(216, 12%, 8%));
+    border: 1px solid white;
+    border-radius: 40px;
     width: 25rem;
     margin: 0 auto; 
 }
 
 img {
-    border: 1px solid black;
+    background-color:hsl(213, 19%, 18%);
+    /* border: 1px solid white; */
+    border-radius: 100%;
+    padding: 15px;
+    margin: 20px 0 10px 30px;
+    
 }
 
 h2 {
     font-family:'Overpass';
     font-weight: 700;
+    border: 1px solid white;
+    margin-left: 30px;
+    width: fit-content;
+    color:hsl(0, 0%, 100%);
 }
 
 p{
+    color:hsl(217, 12%, 63%);
     font-size: 0.9375rem;
     font-family:'Overpass';
     font-weight: 400; 
+    border: 1px solid white;
+    margin-left: 30px;
+    width: 350px;
+}
+
+/* form syles */
+.selection-buttons {
+    border: 1px solid white;
+    width: fit-content;
+    margin-left: 30px;
 }
 
 label {
     display: inline-block;
     padding: 5px;
     /* position: relative; */
-    padding-left: 20px
+    margin-left: 15px;
+    font-family:"Overpass"; 
+}
+
+.selection-buttons__one {
+    margin-left: 0;
 }
 
 label input {
@@ -33,17 +64,20 @@ label input {
 }
 
 label span {
-    background-color: hsl(217, 12%, 63%);
-    border: 1px solid hsl(217, 12%, 63%);
+    background-color: hsl(213, 19%, 18%);
+    border: 1px solid hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     /* position: absolute; */
     overflow: hidden;
-    line-height: 1; 
+    line-height: 2.5; 
     text-align: center;
     border-radius: 100%;
     font-size: 10pt;
+    padding-top:1px;
+    font-size: 1rem;
     /* left: 0; */
     /* top: 50%; */
     /* margin-top: -8.5px;*/
@@ -54,10 +88,36 @@ input:checked + span {
     border-color: #ccf;
 }
 
+.card__submit-button input[type='submit'] {
+    color: white;
+    background: hsl(25, 97%, 53%);
+    border: 1px solid white;
+    border-radius: 30px;
+    font-family: "Overpass";
+    font-size: 15px;
+    font-weight: 700; 
+    margin: 5px 0 0 10px;
+    padding: 15px;
+    width: 340px;
+    letter-spacing: 2px;  
+}
+
+.card__submit-button input[type="submit"]:active {
+    color:hsl(25, 97%, 53%);
+    background-color: white;
+}
+
+/* footer styles */
+.card__submit-button {
+    margin: 20px 0 20px 20px;
+}
+
 .attribution {
+    color: white;
     font-size: 11px;
     text-align: center;
     margin-top: 0.5rem;
+    border: 1px solid white;
 }
 
 .attribution a {
