@@ -6,39 +6,40 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
-s
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
   <div class="card">
 
     <!-- Rating state start -->
     
-    <form action="./thanks.html"></form>
-      <img src="./images/icon-star.svg">
-      <h2>How did we do?</h2>
+    <img src="./images/icon-star.svg">
 
-      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-      <div class='selection-buttons'>
-        <label class="selection-buttons__one"><input type='radio' name="select"><span>1</span></label>
-        <label><input type='radio' name="select"><span>2</span></label>
-        <label><input type='radio' name="select"><span>3</span></label>
-        <label><input type='radio' name="select"><span>4</span></label>
-        <label><input type='radio' name="select"><span>5</span></label>
+    <h2>How did we do?</h2>
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+    <div class='selection-buttons'>
+    <script type="text/javascript" src="script.js"></script>
+    <form name="rating-form" action="#" method="post">
+        <label class="selection-buttons__one"><input type='radio' name="select" value="1" ><span>1</span></label>
+        <label><input type='radio' name="select" value="2"><span>2</span></label>
+        <label><input type='radio' name="select" value="3"><span>3</span></label>
+        <label><input type='radio' name="select" value="4"><span>4</span></label>
+        <label><input type='radio' name="select" value="5" ><span>5</span></label>
       </div>
-      
+      <p class="alert"></p>
       <section class='card__submit-button'>
-        <input type="submit" value="SUBMIT">
+        <input type="submit" value="SUBMIT" onclick="validateForm()">
       </section>
-    </form>
-    
+    </form> 
   </div>
+  
   <!-- Rating state end -->
 
   <!-- Thank you state start
@@ -51,12 +52,5 @@ s
   don’t hesitate to get in touch!
 
   Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-  
 </body>
 </html>

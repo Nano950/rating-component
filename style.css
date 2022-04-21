@@ -1,31 +1,35 @@
 /* page styles */
 body { 
-    background-color: black;
+    background-color: rgba(0, 0, 0, .9);
+    height: 100vh;
+    overflow: hidden;
+    
 }
 
 /* card styles */
 .card {
     background-image:linear-gradient(hsl(213, 19%, 18%),hsl(216, 12%, 8%));
-    border: 1px solid white;
     border-radius: 40px;
     width: 25rem;
-    margin: 0 auto; 
+    margin: 0 auto;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+
 }
 
 img {
     background-color:hsl(213, 19%, 18%);
-    /* border: 1px solid white; */
     border-radius: 100%;
     padding: 15px;
-    margin: 20px 0 10px 30px;
+    margin: 30px 0 10px 30px;
     
 }
 
 h2 {
     font-family:'Overpass';
     font-weight: 700;
-    border: 1px solid white;
-    margin-left: 30px;
+    margin:20px  0 20px 30px;
     width: fit-content;
     color:hsl(0, 0%, 100%);
 }
@@ -35,14 +39,12 @@ p{
     font-size: 0.9375rem;
     font-family:'Overpass';
     font-weight: 400; 
-    border: 1px solid white;
     margin-left: 30px;
     width: 350px;
 }
 
 /* form syles */
 .selection-buttons {
-    border: 1px solid white;
     width: fit-content;
     margin-left: 30px;
 }
@@ -50,8 +52,7 @@ p{
 label {
     display: inline-block;
     padding: 5px;
-    /* position: relative; */
-    margin-left: 15px;
+    margin: 15px 0 0 15px;
     font-family:"Overpass"; 
 }
 
@@ -70,7 +71,6 @@ label span {
     display: inline-block;
     width: 40px;
     height: 40px;
-    /* position: absolute; */
     overflow: hidden;
     line-height: 2.5; 
     text-align: center;
@@ -78,48 +78,39 @@ label span {
     font-size: 10pt;
     padding-top:1px;
     font-size: 1rem;
-    /* left: 0; */
-    /* top: 50%; */
-    /* margin-top: -8.5px;*/
 } 
 
+label span:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
 input:checked + span {
-    background: #ccf;
-    border-color: #ccf;
+    background: hsl(217, 12%, 63%);
+    border-color: hsl(217, 12%, 63%);
+    color: white;
+} 
+
+.card__submit-button {
+    margin: 20px 0 20px 20px;
 }
 
 .card__submit-button input[type='submit'] {
     color: white;
     background: hsl(25, 97%, 53%);
-    border: 1px solid white;
+    border:hsl(25, 97%, 53%);
     border-radius: 30px;
     font-family: "Overpass";
     font-size: 15px;
     font-weight: 700; 
-    margin: 5px 0 0 10px;
+    margin: 5px 0 25px 10px;
     padding: 15px;
     width: 340px;
     letter-spacing: 2px;  
+    cursor: pointer;
 }
 
 .card__submit-button input[type="submit"]:active {
     color:hsl(25, 97%, 53%);
     background-color: white;
-}
-
-/* footer styles */
-.card__submit-button {
-    margin: 20px 0 20px 20px;
-}
-
-.attribution {
-    color: white;
-    font-size: 11px;
-    text-align: center;
-    margin-top: 0.5rem;
-    border: 1px solid white;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
