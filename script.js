@@ -5,7 +5,7 @@ function validateForm() {
         return false;
     }
     else {
-        window.location = "./thanks-card/thanks.html";
+        document.getElementById('rating').setAttribute('action', './thanks-card/thanks.html');
         return x;
     }
 };
