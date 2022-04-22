@@ -9,7 +9,7 @@ body {
 /* card styles */
 .card {
     background-image:linear-gradient(hsl(213, 19%, 18%),hsl(216, 12%, 8%));
-    border-radius: 40px;
+    border-radius: 2.5rem;
     width: 25rem;
     margin: 0 auto;
     position: relative;
@@ -20,11 +20,11 @@ body {
 
 img {
     /* border: 1px solid hsl(0, 0%, 100%); */
-    margin: 40px 0 0 0 ;
+    margin: 2.5rem 0 0 0 ;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 170px;
+    width: 10.675rem;
     
 }
 
@@ -34,8 +34,8 @@ img {
     color: hsl(25, 97%, 53%);
     font-size: 0.9375rem;
     line-height: 1;
-    padding:10px 0;
-    width: 185px;
+    padding: 0.625rem 0;
+    width: 11.5625rem;
 
 }
 
@@ -43,7 +43,7 @@ h2 {
     /* border: 1px solid white; */
     font-family:'Overpass';
     font-weight: 700;
-    margin:20px  0 20px 0;
+    margin:1.25rem  0 1.25rem 0;
     width: fit-content;
     color:hsl(0, 0%, 100%);
     position: relative;
@@ -58,12 +58,11 @@ p{
     font-family:'Overpass';
     font-weight: 400;
     text-align: center;
-    width: 300px;
+    width: 18.75rem;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-top:20px;
-    margin-bottom:30px;
-    padding-bottom:50px;
+    margin-top:1.25rem;
+    margin-bottom:1.875rem;
+    padding-bottom:3.125rem;
 }
-
