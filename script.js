@@ -5,6 +5,8 @@ function validateForm() {
         return false;
     }
     else {
+        console.log(x);
+        localStorage.setItem("rating", x);
         document.getElementById('rating').setAttribute('action', './thanks-card/thanks.html');
         return x;
     }
